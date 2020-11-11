@@ -1,5 +1,5 @@
-FROM postgres:10.1-alpine
+FROM postgres
 
-LABEL maintainer="andre.burgaud@gmail.com"
+LABEL maintainer="mrestuccia@gmail.com"
 
 ADD sql/*.sql /docker-entrypoint-initdb.d/
